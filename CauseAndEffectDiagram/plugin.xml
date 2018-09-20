@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.causeAndEffectPlugin"
+		name="Cause and Effect Diagram Plugin"
+		description="Sample plugin for generating Cause and Effect Diagram"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.causeAndEffectPlugin.CauseAndEffectPlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.causeAndEffectPlugin.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.causeAndEffectPlugin.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.causeAndEffectPlugin.actionset1.CauseAndEffectActionControl"
+					actionType="generalAction"
+      		name="Cause and Effect Diagram Plugin"
+		      description="Sample plugin for generating Cause and Effect Diagram"
+					style="normal"
+          icon="icon/plugin_icon.png"
+          tooltip="Cause and Effect Diagram"
+					toolbarPath="com.vp.plugin.sample.causeAndEffectPlugin.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.causeAndEffectPlugin.CauseAndEffectAction"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
